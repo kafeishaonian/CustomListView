@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 下拉刷新的圆圈 -->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="max" format="integer"/>
+        <!-- 进度条最大值 -->
+        <attr name="fill" format="boolean"/>
+        <!-- 是否填充圆形区域 -->
+        <attr name="Paint_Width" format="integer"/>
+        <!-- 画笔宽度，填充模式下无效，会被重置为0 -->
+        <attr name="Paint_Color" format="integer"/>
+        <!-- 画笔颜色 -->
+        <attr name="Inside_Interval" format="integer"/>
+        <!-- 圆形区域向里缩进的距离 -->
+    </declare-styleable>
+
+    <!-- listviewde header和footer的开关 -->
+    <declare-styleable name="listview_header_and_footer_toggle">
+        <attr name="has_header" format="boolean"/>
+        <attr name="has_footer" format="boolean"/>
+    </declare-styleable>
+</resources>
