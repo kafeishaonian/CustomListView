@@ -11,6 +11,7 @@ import com.hongmingwei.listview.ui.PullListView;
 import com.hongmingwei.listview.ui.PullListViewController;
 
 import java.lang.ref.WeakReference;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,12 +23,21 @@ public class MainActivity extends AppCompatActivity {
     private static final int MESSAGE_PARAM_INFO = 10001;
     private final int DELAYMILLIS = 200;
 
+
+    /**
+     * 伪造数据
+     */
+    private ArrayList<String> strings = new ArrayList<>();
+    private CustomAdapter adapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
         initListener();
+        initData();
     }
 
 
@@ -35,8 +45,29 @@ public class MainActivity extends AppCompatActivity {
         listView = (PullListView) findViewById(R.id.listview);
         errorView = (ErrorView) findViewById(R.id.errorview);
         controller = new PullListViewController(listView, errorView);
+        adapter = new CustomAdapter(this);
+        listView.setAdapter(adapter);
 
         controller.showViewStatus(PullListViewController.ListViewState.EMPTY_LOADING);
+    }
+
+
+
+    private void initData(){
+        strings.clear();
+        strings.add("泰山");
+        strings.add("黄山");
+        strings.add("中国");
+        strings.add("日本");
+        strings.add("喜马拉雅");
+        strings.add("阿尔卑斯");
+        strings.add("长江");
+        strings.add("黄河");
+
+
+        adapter.add(strings);
+        controller.showViewStatus(PullListViewController.ListViewState.LIST_NORMAL_HAS_MORE);
+
     }
 
 
@@ -79,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void run() {
+            controller.showViewStatus(PullListViewController.ListViewState.LIST_REFRESH_COMPLETE);
         }
     };
     /**
@@ -97,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void run() {
+            controller.showViewStatus(PullListViewController.ListViewState.LIST_NO_MORE);
         }
     };
 
