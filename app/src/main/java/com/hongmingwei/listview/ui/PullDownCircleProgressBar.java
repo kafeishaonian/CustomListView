@@ -13,7 +13,7 @@ import com.hongmingwei.listview.R;
 
 /**
  * 下拉刷新自定义圆圈
- * Created by hongmingwei on 2017/2/23 10:53
+ * Created by hongmingwei on 2016/9/14
  */
 public class PullDownCircleProgressBar extends View {
 

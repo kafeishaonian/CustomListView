@@ -16,7 +16,7 @@
         android:visibility="visible" >
 
         <ProgressBar
-            style="@style/QilinProgressSmall"
+            style="@style/ProgressSmall"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="8dip" />
 

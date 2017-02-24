@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.hongmingwei.listview.R;
 
 /**
- * Created by hongmingwei on 2017/2/23 14:10
+ * Created by hongmingwei on 2016/9/15
  */
 public class LoadAndRetryBar extends RelativeLayout {
 

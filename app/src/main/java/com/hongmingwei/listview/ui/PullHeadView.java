@@ -13,7 +13,7 @@ import com.hongmingwei.listview.R;
 
 /**
  * 下拉动画
- * Created by hongmingwei on 2017/2/23 10:50
+ * Created by hongmingwei on 2016/9/14
  */
 public class PullHeadView extends LinearLayout {
 

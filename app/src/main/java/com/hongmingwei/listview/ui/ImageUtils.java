@@ -6,7 +6,7 @@ import android.graphics.BitmapFactory;
 import android.util.Log;
 
 /**
- * Created by hongmingwei on 2017/2/23 16:47
+ * Created by hongmingwei on 2016/9/16
  */
 public class ImageUtils {
 

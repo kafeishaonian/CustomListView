@@ -13,6 +13,9 @@ import com.hongmingwei.listview.ui.PullListViewController;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
+/**
+ * Created by hongmingwei on 2016/9/16
+ */
 public class MainActivity extends AppCompatActivity {
 
     private PullListView listView;

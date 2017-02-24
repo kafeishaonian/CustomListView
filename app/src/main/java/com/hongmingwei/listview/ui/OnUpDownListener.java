@@ -1,7 +1,7 @@
 package com.hongmingwei.listview.ui;
 
 /**
- * Created by hongmingwei on 2017/2/23 14:32
+ * Created by hongmingwei on 2016/9/14
  */
 public interface OnUpDownListener {
     void onScrollUp();

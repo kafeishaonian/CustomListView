@@ -14,7 +14,7 @@ import com.hongmingwei.listview.R;
 
 /**
  * 加载出错时UI
- * Created by hongmingwei on 2017/2/23 16:21
+ * Created by hongmingwei on 2016/9/16
  */
 public class ErrorView extends RelativeLayout implements View.OnClickListener {
 

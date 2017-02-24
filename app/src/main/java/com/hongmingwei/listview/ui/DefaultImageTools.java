@@ -6,7 +6,8 @@ import android.graphics.Bitmap;
 import com.hongmingwei.listview.R;
 
 /**
- * Created by hongmingwei on 2017/2/23 16:46
+ * Created by hongmingwei on 2016/9/16
+ * 
  */
 public class DefaultImageTools {
     private static Bitmap mNoticeErrorBitmap;

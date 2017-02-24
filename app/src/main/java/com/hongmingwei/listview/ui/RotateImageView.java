@@ -12,7 +12,7 @@ import com.hongmingwei.listview.R;
 
 /**
  * 能自旋转的imageView
- * Created by hongmingwei on 2017/2/23 11:34
+ * Created by hongmingwei on 2016/9/14
  */
 public class RotateImageView extends ImageView {
 

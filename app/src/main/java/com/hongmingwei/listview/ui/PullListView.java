@@ -15,7 +15,7 @@ import android.widget.ListView;
 import com.hongmingwei.listview.R;
 
 /**
- * Created by hongmingwei on 2017/2/23 10:40
+ * Created by hongmingwei on 2016/9/14
  */
 public class PullListView extends ListView implements AbsListView.OnScrollListener {
 
@@ -508,10 +508,10 @@ public class PullListView extends ListView implements AbsListView.OnScrollListen
         if (HAS_FOOTER){
             int emptyCount = getHeaderViewsCount() + getFooterViewsCount();
             int mRemainItem = totalItemCount - firstVisibleItem - visibleItemCount;
-            Log.d("mFootViewListenermFootViewListener", "firstVisibleItem:" + firstVisibleItem
-                    + "  visibleItemCount:" + visibleItemCount + "  totalItemCount:" + totalItemCount);
-            Log.d("mFootViewListenermFootViewListener", "totalItemCount" + totalItemCount + "getHeaderViewsCount"
-                    + getHeaderViewsCount() + "getFooterViewsCount:" + getFooterViewsCount());
+//            Log.d("mFootViewListenermFootViewListener", "firstVisibleItem:" + firstVisibleItem
+//                    + "  visibleItemCount:" + visibleItemCount + "  totalItemCount:" + totalItemCount);
+//            Log.d("mFootViewListenermFootViewListener", "totalItemCount" + totalItemCount + "getHeaderViewsCount"
+//                    + getHeaderViewsCount() + "getFooterViewsCount:" + getFooterViewsCount());
             if ((mRemainItem == 0) && (totalItemCount > emptyCount) && (isCanLoadMore) && (hasMoreData) && (HAS_FOOTER) && isAutoLoading){
                 isCanLoadMore=  false;
                 if (mFootViewListener != null){

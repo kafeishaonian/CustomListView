@@ -61,7 +61,7 @@
         android:visibility="visible">
 
         <ProgressBar
-            style="@style/QilinProgressLarge"
+            style="@style/ProgressLarge"
             android:layout_gravity="center_horizontal"/>
 
         <TextView

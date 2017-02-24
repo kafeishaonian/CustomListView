@@ -1,7 +1,7 @@
 package com.hongmingwei.listview.ui;
 
 /**
- * Created by hongmingwei on 2017/2/23 16:45
+ * Created by hongmingwei on 2016/9/16
  */
 public class StringUtils {
     public static boolean isNotBlank(String str) {

@@ -10,7 +10,7 @@
 
 
     <!-- 下拉刷新 -->
-    <style name="QilinProgressLarge" parent="@android:attr/progressBarStyleLarge">
+    <style name="ProgressLarge" parent="@android:attr/progressBarStyleLarge">
         <item name="android:layout_width">54dp</item>
         <item name="android:layout_height">54dp</item>
         <item name="android:indeterminate">true</item>
@@ -18,7 +18,7 @@
     </style>
 
 
-    <style name="QilinProgressSmall" parent="@android:attr/progressBarStyleSmall">
+    <style name="ProgressSmall" parent="@android:attr/progressBarStyleSmall">
         <item name="android:layout_width">21dp</item>
         <item name="android:layout_height">21dp</item>
         <item name="android:indeterminate">true</item>
